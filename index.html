@@ -5,7 +5,22 @@
 <title>首页</title>
 <link href="sytle/style_in.css" rel="stylesheet" type="text/css">
 </head>
-
+<script>
+            var arr=new Array()
+            arr[0]="image/门牌.jpg";
+            arr[1]="image/石碑.jpg";
+            arr[2]="image/伟人像（成品）.jpg";
+            var i=1;
+            function image()
+            {
+                var image=document.getElementById("image");
+                image.src=arr[i]
+                i++;
+                if(i==3)        
+                    i=0             
+                setTimeout("image()",3000)
+            }
+</script>
 <body>
 <table width="1260" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody>
@@ -17,8 +32,8 @@
         <li class="a1"><a class="bq" href="index.html">首页</a></li>
         <li class="a1"><a class="bq" href="labbre.html">实验室概况</a></li>
         <li class="a1"><a class="bq" href="probre.html">教师简介</a></li>
-        <li class="a1"><a class="bq" href="prointro.html">项目介绍</a></li>
-        <li class="a1"><a class="bq" href="graduate.html">往届学生</a></li>
+		<li class="a1"><a class="bq" href="prointro.html">项目介绍</a></li>
+		<li class="a1"><a class="bq" href="paper.html">发表论文</a></li>		  
         <li class="a1"><a class="bq" href="dailylife.html">课题组生活</a></li>
       </ul></td>
     </tr>
@@ -27,19 +42,11 @@
 <table width="1260" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>
-      <td colspan="2" style="border-bottom: 3px solid #12337D;height:770px">
-	  <script language="JavaScript" type="text/javascript">
-function fn(n){
-var nextn;
-if(n==3){nextn=1;}
-else{nextn=n+1;}
-document.getElementById("img"+n).style.display="none";
-document.getElementById("img"+nextn).style.display="block";
-}
-</script>
-<img id="img1" src="image/校园风景1.jpg" onclick="fn(1)" style="display:block;"/>
-<img id="img2" src="image/校园风景2.jpg" onclick="fn(2)" style="display:none;"/>
-<img id="img3" src="image/校园风景3.png" onclick="fn(3)" style="display:none;"/>
+      <td colspan="2" style="height: 730px">
+	  <img src="image/门牌.jpg" id="image">
+	  <script>
+		  image();
+	  </script>
 	  </td>
     </tr>
     <tr>

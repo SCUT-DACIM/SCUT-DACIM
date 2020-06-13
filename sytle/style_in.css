@@ -92,5 +92,6 @@ a.bq:hover
 a.bq:visited
 {
 	text-decoration: none;
-	color:#6C6C6C;
+	color: #6C6C6C;
+	height: auto;
 }

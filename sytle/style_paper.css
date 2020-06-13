@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-td ul li {
+.a{
     list-style-type: none;
     text-align: center;
     float: left;
@@ -13,6 +13,16 @@ td ul li {
     margin-top: 10px;
     margin-bottom: 2px;
 }
+
+.a2   {
+    text-indent: px;
+    list-style-type: disc;
+    margin-left: 0px;
+    font-size: large;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 tr td p {
     height: 20px;
     margin-top: 0px;
@@ -41,4 +51,19 @@ a.bq:visited
 {
 	text-decoration: none;
 	color:#6C6C6C;
+}
+
+a.b2:link{
+	text-decoration: none;
+	color:#12337D;
+}
+a.b2:hover
+{
+	text-decoration: underline;
+	color:#12337D;
+}
+a.b2:visited
+{
+	text-decoration: none;
+	color:#FF4F4F;
 }
