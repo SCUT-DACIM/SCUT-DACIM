@@ -68,3 +68,18 @@ a.bq:visited
 	text-decoration: none;
 	color:#6C6C6C;
 }
+
+a.b1:link{
+	text-decoration: none;
+	color:#000000;
+}
+a.b1:hover
+{
+	text-decoration: underline;
+	color:#12337D;
+}
+a.b1:visited
+{
+	text-decoration: none;
+	color:#000000;
+}
